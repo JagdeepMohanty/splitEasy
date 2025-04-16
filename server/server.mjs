@@ -9,9 +9,15 @@ import Expense from './model/expense.js';
 import Settlement from './model/settlement.js';
 import auth from './middleware/auth.js';
 
+
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', "https://spliteasy.onrender.com"],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
 app.use(express.json());
+
 
 mongoose.connect('mongodb+srv://jagdeep0718:Jagdeep1807@cluster1.gur3w4v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1')
 .then(() => console.log('MongoDB connected'))
