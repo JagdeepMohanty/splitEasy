@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    axios.defaults.baseURL = 'http://localhost:5000' || 'https://spliteasy.onrender.com'; 
+    axios.defaults.baseURL = 'http://localhost:5000' || 'https://spliteasy-eufi.onrender.com'; 
     if (token && !user) {
       axios
         .get('/api/users/me', { headers: { 'x-auth-token': token } })
