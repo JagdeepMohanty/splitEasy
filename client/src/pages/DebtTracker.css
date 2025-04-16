@@ -1,0 +1,46 @@
+
+.debt-tracker {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .debt-tracker h2 {
+    text-align: center;
+    color: #2d3436;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .debt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .debt-card {
+    background: #f9f9f9;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .owe-you {
+    color: #00b894;
+    font-weight: 500;
+  }
+  
+  .you-owe {
+    color: #d63031;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 480px) {
+    .debt-tracker {
+      margin: 2rem 1rem;
+      padding: 1.5rem;
+    }
+  }

@@ -1,0 +1,68 @@
+
+.register-container {
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .register-container h2 {
+    color: #2d3436;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .register-container input {
+    width: 100%;
+    padding: 0.9rem;
+    margin: 0.8rem 0;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .register-container input:focus {
+    border-color: #0984e3;
+    outline: none;
+  }
+  
+  .register-container button {
+    width: 100%;
+    padding: 0.9rem;
+    background: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .register-container button:hover {
+    background: #076cbf;
+  }
+  
+  .register-container p {
+    margin-top: 1.5rem;
+    color: #636e72;
+  }
+  
+  .register-container a {
+    color: #0984e3;
+    text-decoration: none;
+  }
+  
+  .register-container a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 480px) {
+    .register-container {
+      margin: 2rem 1rem;
+      padding: 1.5rem;
+    }
+  }

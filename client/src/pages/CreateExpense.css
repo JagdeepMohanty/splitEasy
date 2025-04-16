@@ -1,0 +1,62 @@
+
+.expense-form {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .expense-form h2 {
+    text-align: center;
+    color: #2d3436;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .expense-form input,
+  .expense-form select {
+    width: 100%;
+    padding: 0.9rem;
+    margin: 0.8rem 0;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .expense-form input:focus,
+  .expense-form select:focus {
+    border-color: #e84393;
+    outline: none;
+  }
+  
+  .expense-form select {
+    height: 150px;
+    background: #f9f9f9;
+  }
+  
+  .expense-form button {
+    width: 100%;
+    padding: 0.9rem;
+    background: #e84393;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .expense-form button:hover {
+    background: #d63384;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 480px) {
+    .expense-form {
+      margin: 2rem 1rem;
+      padding: 1.5rem;
+    }
+  }
