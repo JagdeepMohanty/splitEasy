@@ -11,11 +11,9 @@ import auth from './middleware/auth.js';
 
 
 const app = express();
-app.use(cors({
-  origin: ['http://localhost:3000', "https://spliteasy.onrender.com"],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true,
-}));
+
+app.use(cors());
+
 app.use(express.json());
 
 
