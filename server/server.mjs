@@ -12,7 +12,10 @@ import auth from './middleware/auth.js';
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://split-easy-zp37.vercel.app', 
+  credentials: true,
+}));
 
 app.use(express.json());
 
